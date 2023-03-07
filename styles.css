@@ -437,7 +437,7 @@ html{
   position: absolute;
   left: 10%;
   top: 10%;
-  transform: translate(-180%, -200%);
+  transform: translate(-180%, -240%);
   filter: drop-shadow(0 0 5px #ffeb3b);
 }
 
