@@ -75,10 +75,6 @@ document.addEventListener("DOMContentLoaded", function() {
   }
 });
 
-window.addEventListener('beforeunload', function (e) {
-  e.preventDefault();
-  e.returnValue = '';
-});
 
 
 /* ---------- */
