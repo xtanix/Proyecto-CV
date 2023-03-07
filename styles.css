@@ -1,0 +1,760 @@
+body {
+  height: 100vh;
+  background-image: linear-gradient(to bottom, #000000, #061931);
+  background-size: cover;
+}
+
+
+
+/* Establecer estilos para el contenedor */
+#TituloContenedor {
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Establecer estilos para el título animado */
+#TituloAni {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+  font-size: 100px;
+  font-weight: 800;
+  position: relative;
+  z-index: 1;
+}
+
+#TituloAni a {
+  text-decoration: none;
+}
+
+#TituloAni span {
+  color: #d8fdc7;
+  background-color: rgba(0, 0, 0, 0);
+  padding: 20px;
+  border-radius: 10px;
+  transition: all 0.5s ease-in-out;
+}
+
+#TituloAni a:hover span {
+  animation: neon 1s ease-in-out infinite alternate;
+}
+
+@keyframes neon {
+  from {
+    color: #fff;
+    text-shadow: 0 0 10px #fff,
+                 0 0 20px #fff,
+                 0 0 30px #fff,
+                 0 0 40px #ff00de,
+                 0 0 70px #ff00de,
+                 0 0 80px #ff00de,
+                 0 0 100px #ff00de,
+                 0 0 150px #ff00de;
+  }
+  
+  to {
+    color: #fff;
+    text-shadow: 0 0 5px #fff,
+                 0 0 10px #fff,
+                 0 0 15px #fff,
+                 0 0 20px #ff00de,
+                 0 0 35px #ff00de,
+                 0 0 40px #ff00de,
+                 0 0 50px #ff00de,
+                 0 0 75px #ff00de;
+  }
+}
+
+/* Estilos para el subtitulo */
+#subtitulo {
+  font-size: 28px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: -160px;
+  margin-bottom: 10px;
+  background-image: linear-gradient(to bottom, #000000, #b817e9);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  border: 3px solid transparent;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+#subtitulo:hover {
+  border-color: #f0f;
+  box-shadow: 0 0 10px #f0f;
+}
+
+
+/* ocultar el texto */
+.oculto {
+  display: none;
+}
+
+/* Estilos para el texto */
+#texto {
+  font-size: 18px;
+  line-height: 1.7;
+  color: #e62315;
+  text-align: justify;
+  margin: 0 auto;
+  max-width: 800px;
+  text-shadow: 1px 1px 1px rgba(243, 24, 24, 0.2);
+  }
+
+
+/* Estilos para el contenedor principal */
+body {
+  background-color: #000000;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+/* deslizar cuando hago clic en los links */
+html{
+    
+    scroll-behavior: smooth;
+}
+/* MENU */
+.contenedor-header {
+  background: linear-gradient(to bottom right, #5e5ce6, #fc5c7d);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 99;
+}
+
+.contenedor-header header {
+  max-width: 1100px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+}
+
+.contenedor-header header .logo a {
+  font-family: 'Balsamiq Sans';
+  font-size: 36px;
+  color: transparent;
+  text-decoration: none;
+  text-shadow: 0 0 10px #ffdf00, 0 0 20px #ffdf00, 0 0 30px #ffdf00, 0 0 40px #ffdf00, 0 0 50px #ffdf00, 0 0 60px #ffdf00, 0 0 70px #ffdf00;
+  animation: flicker 1.5s infinite alternate;
+}
+
+@keyframes flicker {
+  0%, 19.5%, 22.5%, 27.5%, 37.5%, 40.5%, 100% {
+    text-shadow: 0 0 10px #14c8f5, 0 0 20px #14dfd4, 0 0 30px #0fa3dd, 0 0 40px #0ae288, 0 0 50px #0beed0, 0 0 60px #15d2eb, 0 0 70px #11e3f1;
+  }
+  
+  20%, 22%, 27%, 37%, 40%, 100% {
+    text-shadow: none;
+  }
+}
+
+
+.contenedor-header header nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.contenedor-header header nav ul li {
+  margin: 0 10px;
+}
+
+.contenedor-header header nav ul li a {
+  text-align: none;
+  color: #fff;
+  margin: 0 15px;
+  padding: 3px;
+  transition: .5s;
+  text-decoration: none;
+  background-image: linear-gradient(to bottom, #fff, #f0f0f0);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  font-family: 'Balsamiq Sans', sans-serif;
+}
+
+.contenedor-header header nav ul li a:hover {
+  background-image: none;
+  color: #fff;
+  background: linear-gradient(to bottom right, #4e54c8, #8f94fb, #c0c0f3);
+}
+.nav-responsive {
+  background-color: #1CB698;
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .contenedor-header header {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 10px 20px;
+  }
+
+  .contenedor-header header .logo {
+    margin-bottom: 20px;
+  }
+
+  .contenedor-header header nav {
+    margin-top: 20px;
+  }
+
+  .contenedor-header header nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contenedor-header header nav ul li {
+    margin: 10px 0;
+  }
+
+  .nav-responsive {
+    display: block;
+    margin-top: 20px;
+  }
+}
+
+/* Estilo para la sección "Acerca de mi" */
+.sobremi {
+  background-image: url(sobre_mi.jpg);
+  background-size: 160%;
+  padding: 80px 0;
+}
+
+/* Estilo para el contenido de la sección */
+.contenido-seccion {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* Estilo para el título principal */
+.titulo-seccion {
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 50px;
+  font-family: 'Balsamiq Sans', sans-serif;
+  color: #b4b4b4;
+}
+
+/* Estilo para la sección "Acerca de mi" */
+.sobremi {
+  background-color: #b4b4b4;
+  padding: 80px 0;
+  animation: fade-in 5s ease-out;
+}
+
+/* Estilo para el subtítulo "Detalles personales" */
+.sobremi h3 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  font-family: 'Balsamiq Sans', sans-serif;
+  color: #b4b4b4;
+}
+
+/* Estilo para el segundo parrafo */
+.sobremi p {
+  font-size: 28px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  font-family: 'Balsamiq Sans', sans-serif;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Estilo para el párrafo principal */
+.sobremi p.especial {
+  font-size: 28px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  font-family: 'Balsamiq Sans', sans-serif;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+
+/* Estilo para la fila con los detalles personales */
+.fila {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+
+/* Estilo para las columnas de detalles personales */
+.col {
+  flex: 1;
+  text-align: center;
+  border: 1px solid #000000;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+/* Estilo para los iconos de detalles personales */
+.col i {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #f39c12;
+  border: 1px solid #f39c12;
+  border-radius: 50%;
+  padding: 10px;
+}
+
+/* Estilo para el título de detalles personales */
+.col .titulo-detalle {
+  font-size: 20px;
+  margin-bottom: 20px;
+  font-family: 'Balsamiq Sans', sans-serif; /* Fuente de Google Fonts */
+  color: #cfcece;
+}
+
+/* Estilo para el párrafo de detalles personales */
+.col p {
+  font-size: 16px;
+  line-height: 1.5;
+  font-family: 'Balsamiq Sans', sans-serif;
+  color: #fffefe;
+}
+
+.animacion-activa {
+  animation: fade-in 5s ease-out;
+}
+
+
+/*Animacion para la seccion "acerca de mi" */
+.animacion {
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+  position: fixed;
+  bottom: -100px;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: transform 5s ease-out;
+}
+
+/* Animación para la sección "Acerca de mi" */
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+/* SECCION General */
+.inicio{
+    background: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3)),
+    url("fondo.jpg");
+    background-size: cover;
+    background-position: center center;
+    color: #d8c7eb;
+}
+.inicio .contenido-seccion{
+    max-width: 1000px;
+    margin: auto;
+    text-align: center;
+    padding: 0 10px;
+}
+.inicio .contenido-seccion header{
+    padding: 200px;
+}
+
+.inicio .contenido-seccion header .nav-bar{
+  position: fixed;
+  background-color: #f7f7f7;
+  font-size: 20px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  line-height: 50px;
+  cursor: pointer;
+  transition: .3s;
+  border: 2px solid #FFD700;
+  box-shadow: 0 0 5px #FFD700;
+}
+
+.inicio .contenido-seccion header .nav-bar:hover{
+    box-shadow: 0 0 35px #fff;
+}
+.inicio .contenido-seccion .info{
+    padding-bottom: 130px;
+}
+.inicio .contenido-seccion .info h1{
+    font-size: 3rem;
+    letter-spacing: 5px;
+}
+.inicio .contenido-seccion .info h2{
+    font-weight: normal;
+    font-size: 20px;
+    margin-top: -10px;
+    letter-spacing: 2px;
+}
+.inicio .contenido-seccion .info .redes{
+    margin: 20px 0;
+}
+.inicio .contenido-seccion .info .redes a{
+  display: inline-block;
+  text-decoration: none;
+  background-color: #000;
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  margin: 0 5px;
+  transition: .3s;
+  filter: drop-shadow(0 0 5px #2196f3);
+}
+
+.inicio .contenido-seccion .info .redes a:hover{
+  color: #fff;
+  background-color: #00e0fd;
+  box-shadow: 0 0 10px #00BFFF, 0 0 20px #00BFFF, 0 0 30px #00BFFF, 0 0 40px #00BFFF, 0 0 70px #00BFFF, 0 0 80px #00BFFF, 0 0 100px #00BFFF;
+}
+
+.inicio .contenido-seccion .foto{
+    position: relative;
+}
+.inicio .contenido-seccion .foto img{
+  max-width: 300px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  position: absolute;
+  left: 10%;
+  top: 10%;
+  transform: translate(-180%, -200%);
+  filter: drop-shadow(0 0 5px #ffeb3b);
+}
+
+
+/* estilos generales */
+.titulo-seccion{
+    font-family: "Yellowtail";
+    font-size: 1.5rem;
+}
+
+/* Estilos para la sección Resumen */
+
+.resumen {
+  background: linear-gradient(to bottom, #333333, #f2f2f2);
+  padding: 50px 0;
+  }
+
+.contenido-seccion {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.titulo-seccion {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 36px;
+  font-weight: bold;
+  color: #5e5e5e;
+}
+
+.info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  margin-top: 40px;
+}
+
+.col {
+  width: 100%;
+  max-width: 500px;
+}
+
+.titulo {
+  display: block;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #818181;
+  text-align: left;
+}
+
+.datos {
+  width: 80px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #979595;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.descripcion {
+  padding: 10px 20px;
+  background: linear-gradient(to bottom, #5a5a5a, #000000);
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(32, 32, 32, 0.2);
+  font-size: 18px;
+  color: #646464;
+  text-align: justify;
+  line-height: 1.5;
+  vertical-align: middle;
+}
+
+.descripcion h4 {
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 5px;
+  color: #c4c1c1;
+  font-size: 22px;
+}
+
+.descripcion p {
+  margin-top: 0;
+  margin-bottom: 5px;
+  color: #bebbbb;
+  font-size: 18px;
+}
+
+.descripcion .promedio {
+  display: block;
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
+
+.descripcion .goles {
+  display: block;
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
+
+.descripcion .goles::before {
+  content: "Goles: ";
+  font-weight: normal;
+}
+
+.descripcion .promedio::before {
+  content: "Promedio de Gol/Juego: ";
+  font-weight: normal;
+}
+
+@media screen and (min-width: 768px) {
+  .col {
+    width: 50%;
+  }
+}
+
+
+/* SECCION CONTACTO */
+.contacto {
+  background-image: url(email.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  padding: 100px 0;
+}
+
+.contacto .contenido-seccion {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: rgba(214, 27, 27, 0);
+  padding: 40px;
+  border-radius: 10px;
+}
+
+.contacto .contenido-seccion h2.titulo-seccion {
+  font-size: 48px;
+  margin-bottom: 20px;
+  color: #fff;
+  text-align: center;
+  text-shadow: 2px 2px #000;
+}
+
+.contacto .contenido-seccion h3 {
+  font-size: 32px;
+  margin-bottom: 40px;
+  color: #fff;
+  text-align: center;
+  text-shadow: 2px 2px #000;
+}
+
+.contacto .fila {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.contacto .col {
+  flex-basis: 30%;
+  margin-bottom: 20px;
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px #0f0, -2px -2px 10px #0f0;
+}
+
+.contacto .col:hover {
+  background-color: rgba(0, 255, 0, 0);
+}
+
+.contacto .col h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #fff;
+  text-shadow: 2px 2px #000;
+}
+
+.contacto .col .info-contacto {
+  font-size: 20px;
+  color: #fff;
+  text-shadow: 2px 2px #000;
+}
+
+.contacto .col .enlace {
+  display: block;
+  margin-top: 20px;
+  color: #0f0;
+  font-size: 20px;
+  text-shadow: 2px 2px #000;
+}
+
+.contacto .col .enlace:hover {
+  color: #f5f2f2;
+  text-shadow: none;
+}
+
+.contacto .col .fa-solid {
+  font-size: 36px;
+  margin-bottom: 10px;
+  color: #0f0;
+  text-shadow: 2px 2px #000;
+}
+
+/*Seccion Habilidades*/
+
+ .habilidades {
+  background-image: url("messi_habilidad.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  padding: 200px 0;
+}
+
+ .habilidades::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000000;
+  opacity: 0.5;
+}
+  
+  .habilidades-contenido {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .habilidades-titulo {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .habilidad {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .habilidad-nombre {
+    flex: 1;
+    font-size: 18px;
+    font-weight: bold;
+    margin-right: 20px;
+  }
+  
+  .habilidad-barra {
+    flex: 3;
+    height: 20px;
+    background-color: #ddd;
+    border-radius: 10px;
+    position: relative;
+  }
+  
+  .habilidad-progreso {
+    height: 100%;
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #2a79ad;
+    transition: width 2s ease-in-out;
+  }
+  
+  .habilidad-porcentaje {
+    flex: 1;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: right;
+    margin-left: 20px;
+  }
+  
+  .argentina {
+    width: 93%;
+    background-color: #04aa6d;
+  }
+  
+  .barcelona {
+    width: 85%;
+    background-color: #a9cf1d;
+  }
+  
+  .psg {
+    width: 75%;
+    background-color: #f44336;
+  }
+  /*Animacion de carga al bajar*/
+
+  .habilidad-progreso.loading {
+    width: 0;
+    transition: none;
+  }
+  
+  .habilidad-progreso.loaded {
+    transition: width 3s ease-in-out;
+  }
+  
+  .habilidad-progreso:not(.loaded) {
+    width: 0;
+  }
+  
+  .habilidad-progreso.loading ~ .habilidad-porcentaje {
+    opacity: 0;
+  }
+  
+  .habilidad-progreso.loaded ~ .habilidad-porcentaje {
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+  

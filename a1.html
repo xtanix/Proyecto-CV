@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="styles.css">
+	<script src="script.js"></script>
+	<title>ProyectoFinal</title>
+</head>
+<body>
+
+	   <!-- MENU ENCABEZADO -->
+	   <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">Lionel</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#habilidades" onclick="seleccionar()">HABILIDADES</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+
+	<!-- Seccion General -->
+	
+	<section class="inicio" id="inicio">
+		<div class="contenido-seccion">
+		  <header>
+			<!--
+			<nav id="nav" class="nav">
+			  <a href="#inicio">Inicio</a>
+			  <a href="#acerca-de-mi">Acerca de mí</a>
+			  <a href="#mi-contacto">Mi Contacto</a>
+			  <a href="#resumen">Resumen</a>
+			  <a href="#habilidades">Habilidades</a>
+			</nav>
+			!-->
+		  </header>
+		  <div class="info">
+			<h1>Lionel Andrés Messi Cuccittini</h1>
+			<h2>Futbolista argentino y Campeon del Mundo</h2>
+			<div class="redes">
+				<div class="redes">
+					<a href="https://www.linkedin.com/in/lionel-messi-123456"><i class="fa-brands fa-linkedin-in"></i></a>
+					<a href="https://twitter.com/leomessisite"><i class="fa-brands fa-twitter"></i></a>
+					<a href="https://www.facebook.com/LeoMessi"><i class="fa-brands fa-facebook-f"></i></a>
+					<a href="https://www.instagram.com/leomessi/"><i class="fa-brands fa-square-instagram"></i></a>
+					<a href="https://www.youtube.com/watch?v=1gUCu2e_JiM"><i class="fa-brands fa-youtube"></i></a>
+				</div>
+		  </div>
+		  <div class="foto">
+			<img src="messi_perfil.jpg" alt="">
+		  </div>
+		</div>
+	  </section>
+	  
+	  
+	<!-- MI CONTACTO -->
+	<section class="contacto" id="contacto">
+		<div class="contenido-seccion">
+		  <h2 class="titulo-seccion">Contacto</h2>
+		  <h3>Ponte en contacto conmigo!</h3>
+	  
+		  <div class="fila">
+			<div class="col">
+			  <h2>
+				<i class="fa-solid fa-phone"></i> Teléfono
+			  </h2>
+			  <span class="info-contacto">011 - 1123455443</span>
+			</div>
+			<div class="col">
+			  <h2>
+				<i class="fa-solid fa-envelope"></i> Correo
+			  </h2>
+			  <span class="info-contacto">LionelMessi@gmail.com</span>
+			  <a href="mailto:LionelMessi@gmail.com" class="enlace-contacto">
+				<i class="fa-solid fa-envelope"></i>
+			  </a>
+			</div>
+			<div class="col">
+			  <h2>
+				<i class="fa-solid fa-globe"></i> Página Web
+			  </h2>
+			  <span class="info-contacto">https://messi.com/</span>
+			  <a href="https://messi.com/" class="enlace-contacto">
+				<i class="fa-solid fa-globe"></i>
+			  </a>
+			</div>
+		  </div>
+		</div>
+	  </section>
+	  
+		
+<!-- Resumen -->
+<section class="resumen" id="resumen">
+	<div class="contenido-seccion">
+	  <h2 class="titulo-seccion">Resumen</h2>
+	  <div class="experiencia">
+		<h3>Mi carrera y progreso</h3>
+		<ul>
+		  <li>
+			<div class="anio">1993 - 2002</div>
+			<div class="descripcion">
+			  <h4>Comienzos en el fútbol</h4>
+			  <p>Empecé a jugar al fútbol a los 5 años en un equipo local y descubrí mi pasión por el deporte. Durante mi adolescencia, fui seleccionado para un equipo juvenil en el que comencé a desarrollar mi habilidad y técnica.</p>
+			</div>
+		  </li>
+		  <li>
+			<div class="anio">2003 - 2004</div>
+			<div class="descripcion">
+			  <h4>Debut profesional</h4>
+			  <p>A los 16 años, debuté como profesional en el equipo de mi ciudad natal. Fue un momento emocionante para mí y una oportunidad para demostrar mi talento en el campo.</p>
+			</div>
+		  </li>
+		  <li>
+			<div class="anio">2005 - 2021</div>
+			<div class="descripcion">
+			  <h4>Éxito en el FC Barcelona</h4>
+			  <p>En 2005, me uní al FC Barcelona y comencé una exitosa carrera en el club. Durante mi tiempo allí, ganamos numerosos títulos y logros, y yo fui nombrado el mejor jugador del mundo en varias ocasiones.</p>
+			  <p>Mi desempeño en el campo y mis habilidades como líder y compañero de equipo también me permitieron convertirme en el capitán del equipo. Juntos, logramos grandes cosas y dejamos un legado en el fútbol.</p>
+			</div>
+		  </li>
+		  <li>
+			<div class="anio">2022 - presente</div>
+			<div class="descripcion">
+			  <h4>PSG y nuevos desafíos</h4>
+			  <p>En 2022, me uní al Paris Saint-Germain para enfrentar nuevos desafíos y continuar mi carrera en el fútbol. Me emociona ser parte de este equipo y estoy listo para dar lo mejor de mí en el campo.</p>
+			</div>
+		  </li>
+		</ul>
+	  </div>
+	</div>
+  </section>
+  
+			<!-- HABILIDADES -->
+			<section class="habilidades" id="habilidades">
+				<div class="habilidades-contenido">
+				  <h2 class="habilidades-titulo">Mis habilidades</h2>
+				  
+				  <div class="habilidad">
+					<p class="habilidad-nombre">Seleccion Argentina</p>
+					<div class="habilidad-barra">
+					  <div class="habilidad-progreso argentina"></div>
+					  <div class="habilidad-porcentaje">99%</div>
+					</div>
+				  </div>
+			  
+				  <div class="habilidad">
+					<p class="habilidad-nombre">F.C Barcelona</p>
+					<div class="habilidad-barra">
+					  <div class="habilidad-progreso barcelona"></div>
+					  <div class="habilidad-porcentaje">80%</div>
+					</div>
+				  </div>
+			  
+				  <div class="habilidad">
+					<p class="habilidad-nombre">PSG</p>
+					<div class="habilidad-barra">
+					  <div class="habilidad-progreso psg"></div>
+					  <div class="habilidad-porcentaje">70%</div>
+					</div>
+				  </div>
+				</div>
+			  </section>
+			  
+			  
+			    <!-- Acerca de mi -->
+				<section class="sobremi" id="sobremi">
+					<div class="contenido-seccion">
+						<h2 class="titulo-seccion">Acerca de mi</h2>
+						<h3>Detalles personales</h3>
+			
+						<p class="especial">Me dedico en cuerpo y alma al Futbol. Ha sido un viaje increíble hasta ahora. He tenido la suerte de jugar al fútbol en algunos de los mejores clubes del mundo, como el FC Barcelona y ahora el Paris Saint-Germain, y representar a mi país, Argentina, en competiciones internacionales.
+							Empecé a jugar al fútbol cuando era un niño, en mi ciudad natal, Rosario, Argentina. Desde muy joven, supe que quería ser futbolista y trabajé muy duro para lograrlo. Fue un camino lleno de sacrificios, pero también de muchas alegrías y aprendizajes.</p>
+						<p>He tenido la oportunidad de jugar con algunos de los mejores jugadores del mundo, como Xavi, Iniesta, Neymar, Suárez, Ronaldinho y muchos otros. Cada uno de ellos ha dejado una huella en mi carrera y me ha enseñado cosas importantes sobre el juego y la vida.
+							A lo largo de mi carrera, he ganado muchos títulos y premios, pero lo más importante para mí ha sido el amor y el apoyo de los aficionados. Siempre he tratado de dar lo mejor de mí en cada partido y de representar a mi equipo y a mi país con honor y dignidad.
+							Por supuesto, también ha habido momentos difíciles, como lesiones y derrotas en partidos importantes. Pero siempre he tratado de mantener una actitud positiva y seguir adelante. Creo que es importante no rendirse nunca y seguir luchando por tus objetivos.</p>
+			
+						<div class="fila">
+							<div class="col">
+								<i class="fa-solid fa-user"></i>
+								<span class="titulo-detalle">Perfil</span>
+								<p>Soy Lionel Messi, un futbolista argentino y considerado uno de los mejores jugadores de la historia del fútbol. Nací en Rosario, Argentina en 1987 y comencé a jugar al fútbol desde muy joven. Desde entonces, he tenido la suerte de jugar en algunos de los mejores clubes del mundo, como el FC Barcelona y actualmente en el Paris Saint-Germain.
+									En el campo, soy conocido por mi habilidad excepcional, como mi velocidad, control del balón y capacidad de gol. He ganado muchos títulos y premios a lo largo de mi carrera, pero lo más importante para mí es el amor y apoyo de los aficionados.
+									Soy muy agradecido por todo lo que he logrado hasta ahora en mi carrera, pero todavía tengo muchos sueños por cumplir. Espero seguir jugando al fútbol por muchos años más y seguir disfrutando de este hermoso deporte.</p>
+							</div>
+							<div class="col">
+								<i class="fa-solid fa-location-pin"></i>
+								<span class="titulo-detalle">Ubicación</span>
+								<p>Soy de Argentina. Argentina es conocida en todo el mundo por su amor por el fútbol, y es un lugar donde el deporte es una parte fundamental de la cultura. Los partidos de fútbol son un evento nacional que unen a personas de todas las edades y clases sociales, y es una oportunidad para celebrar y disfrutar juntos.</p>
+							
+						</div>
+					</div>
+					<div id="acerca-de-mi" class="animacion"></div>
+				</section>
+
+</body>
+</html>
